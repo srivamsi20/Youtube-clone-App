@@ -10,6 +10,8 @@
   .video-grid{
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    column-gap: 8px;
+    row-gap: 20px;
    
   }
 }
@@ -66,6 +68,7 @@
   width: 100%;
   border-radius: 7px;
   transition: border-radius 0.20s;
+  height: auto;
   /*display: block;*/
 }
 .thumbnail1:hover{
@@ -96,7 +99,7 @@
 
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  text-overflow: ellipsis; 
+  text-overflow: ellipsis;
   
 }
 .video-author a{

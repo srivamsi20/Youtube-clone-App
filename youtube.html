@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="youtube.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="sidebar.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <title>youtube-project</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+        <img class="hamburger-menu" src="youtube-logs/hamburger-menu.svg" alt="">
+        <img class="youtube-logo" src="youtube-logs/youtube-logo.svg" alt="">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="search" placeholder="Search">
+      <button class="search-button">
+        
+          <img class="search-icon" src="youtube-logs/search.svg" alt="">
+          <div class="tooltip">Search</div>
+          <!--put posyion abasolute inside postion relaitive-->
+          
+      </button>
+      <button class="voice-search-button">
+          <img class="voice-search-icon" src="youtube-logs/voice-search-icon.svg" alt="">
+          <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+          <div class="upload-icon-container">
+            <img class="upload-icon" src="youtube-logs/upload.svg" alt="">
+            <div class="tooltip">Create</div>
+          </div>
+            <div class="youtube-apps-icon-container">
+              <img class="youtube-apps-icon" src="youtube-logs/youtube-apps.svg" alt="">
+              <div class="tooltip">YouTube apps</div>
+            </div>
+            
+            <div class="notifications-icon-container">
+              <img class="notifications-icon" src="youtube-logs/notifications.svg" alt="">
+              <div class="notifications-count">
+                  9+
+              </div>
+              <div class="tooltip">notifications</div>
+            </div>
+            <img class="current-user-picture" src="profile/myprofile.jpg" alt="">
+        
+    </div>
+    
+  </div>
+
+  <nav class="side-bar">
+      <div class="sidebar-link">
+        <img src="youtube-logs/side-logs/home.svg" alt="">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-logs/side-logs/explore.svg" alt="">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-logs/side-logs/subscriptions.svg" alt="">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-logs/side-logs/originals.svg" alt="">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-logs/side-logs/youtube-music.svg" alt="">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-logs/side-logs/library.svg" alt="">
+        <div>
+          Library
+        </div>
+      </div>
+  </nav>
+  <main>
+    <section class="video-grid">
+      
+        <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                <img class="thumbnail1" src="thumbnail/thumbnail-1.webp" alt="">
+                <div class="video-time">14:20</div>
+              </a>  
+            </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <img class="profile-picture" src="profile/channel-1.jpeg" alt="">
+              </a>
+            </div>
+            
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </a>
+              </p>
+              <p class="video-author">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                  Marques Brownlee
+                </a>
+              </p>
+              <p class="video-stats">
+                4.3M views &#183; 3 years ago
+              </p>
+            </div>
+    
+            </div>
+        </div>
+      <!--v2-->
+    <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+          <img class="thumbnail1" src="thumbnail/thumbnail-2.webp" alt="">
+          <div class="video-time">8:22</div>
+          </a>
+        </div>
+        
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+            <img class="profile-picture" src="profile/channel-2.jpeg" alt="">
+            </a>
+          </div>
+          
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              Try Not To Laugh Challenge #9
+              </a>
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              Markiplier
+              </a>
+            </p>
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+  </div>
+      <!--V3-->
+  <div class="video-preview">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+      <img class="thumbnail1" src="thumbnail/thumbnail-3.webp" alt="">
+      <div class="video-time">9:13</div>
+      </a>
+    </div>
+    
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+        <img class="profile-picture" src="profile/channel-3.jpeg" alt="">
+        </a>
+      </div>
+      
+      <div class="video-info">
+        <p class="video-title">
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+          Crazy Tik Toks Taken Moments Before DISASTER
+          </a>
+        </p>
+        <p class="video-author">
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+          SniperWolf
+          </a>
+        </p>
+        <p class="video-stats">
+          12M views  &#183; 1 year ago
+        </p>
+      </div>
+  
+    </div>
+  
+  </div>
+    <!--V4-->
+
+  <div class="video-preview">
+  <div class="thumbnail-row">
+    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+      <img class="thumbnail1" src="thumbnail/thumbnail-4.webp" alt="">
+    <div class="video-time">22:09</div>
+    </a>
+  </div>
+  
+  <div class="video-info-grid">
+    <div class="channel-picture">
+      <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+        <img class="profile-picture" src="profile/channel-4.jpeg" alt="">
+      </a>
+    </div>
+    
+    <div class="video-info">
+      <p class="video-title">
+        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+          The Simplest Math Problem No One Can Solve - Collatz Conjecture
+        </a>
+      </p>
+      <p class="video-author">
+        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+          Veritasium
+        </a>
+      </p>
+      <p class="video-stats">
+        18M views &#183; 4 months ago
+      </p>
+    </div>
+  
+  </div>
+  
+  </div>
+    <!--V5-->
+  <div class="video-preview">
+    <div class="thumbnail-row">
+      <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+      <img class="thumbnail1" src="thumbnail/thumbnail-5.webp" alt="">
+      <div class="video-time">11:17</div>
+      </a>
+    </div>
+    
+    <div class="video-info-grid">
+      <div class="channel-picture">
+        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+          <img class="profile-picture" src="profile/channel-5.jpeg" alt="">
+        </a>
+      </div>
+      
+      <div class="video-info">
+        <p class="video-title">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+            Kadane's Algorithm to Maximum Sum Subarray Problem
+          </a>
+        </p>
+        <p class="video-author">
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">CS Dojo</a>
+        </p>
+        <p class="video-stats">
+          519K views &#183; 5 years ago
+        </p>
+      </div>
+  
+    </div>
+  
+  </div>
+      <!--V6-->
+  <div class="video-preview">
+  <div class="thumbnail-row">
+    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+      <img class="thumbnail1" src="thumbnail/thumbnail-6.webp" alt="">
+      <div class="video-time">19:59</div>
+    </a>
+  </div>
+  
+  <div class="video-info-grid">
+    <div class="channel-picture">
+      <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+        <img class="profile-picture" src="profile/channel-6.jpeg" alt="">
+      </a>
+    </div>
+    
+    <div class="video-info">
+      <p class="video-title">
+        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+          Anything You Can Fit In The Circle I’ll Pay For
+        </a>   
+      </p>
+      <p class="video-author">
+        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">MrBeast</a>
+      </p>
+      <p class="video-stats">
+        314M views &#183; 5 year ago
+      </p>
+    </div>
+  
+  </div>
+  
+  </div>
+
+    <!--v7-->
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">
+          <img class="thumbnail1" src="thumbnail/thumbnail-7.webp" alt="">
+          <div class="video-time">17:01</div>
+        </a>
+      </div>
+      
+      <div class="video-info-grid">
+        <div class="channel-picture">
+          <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">
+            <img class="profile-picture" src="profile/channels7_profile.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="video-info">
+          <p class="video-title">
+            <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">
+              Elon Musk’s Files SERIOUS CASE On INDIA 🇮🇳 | What Exactly Happened? | Aye Jude
+            </a>   
+          </p>
+          <p class="video-author">
+            <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">Aye Jude
+            </a>
+          </p>
+          <p class="video-stats">
+            314M views &#183; 5 hours ago
+          </p>
+        </div>
+      
+      </div>
+      
+      </div>
+      <!--V8-->
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=aKq8bkY5eTU">
+            <img class="thumbnail1" src="thumbnail/thumbnail-8.webp" alt="">
+            <div class="video-time">19:59</div>
+          </a>
+        </div>
+        
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/watch?v=aKq8bkY5eTU">
+              <img class="profile-picture" src="profile/channel-6.jpeg" alt="">
+            </a>
+          </div>
+          
+          <div class="video-info">
+            <p class="video-title">
+              <a href="https://www.youtube.com/watch?v=aKq8bkY5eTU">
+                I Survived The 5 Deadliest Places On Earth
+              </a>   
+            </p>
+            <p class="video-author">
+              <a href="https://www.youtube.com/watch?v=aKq8bkY5eTU">MrBeast</a>
+            </p>
+            <p class="video-stats">
+              314M views &#183; 19 hours ago
+            </p>
+          </div>
+        
+        </div>
+        
+        </div>
+        <!--V9-->
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">
+              <img class="thumbnail1" src="thumbnail/thumbnail-9.webp" alt="">
+              <div class="video-time">14:09</div>
+            </a>
+          </div>
+          
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">
+                <img class="profile-picture" src="profile/channels7_profile.jpg" alt="">
+              </a>
+            </div>
+            
+            <div class="video-info">
+              <p class="video-title">
+                <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">
+                  🚨&nbsp🧑‍🚀Sunita Williams Heroic SPACE STORY Explained &nbsp 🧑‍🚀🚀 | 286 Days Of Will Power | Aye Jude✊
+                </a>   
+              </p>
+              <p class="video-author">
+                <a href="https://www.youtube.com/watch?v=NBlXg9C2GVg&t=761s">Aye Jude
+                </a>
+              </p>
+              <p class="video-stats">
+                314M views &#183; 23 days ago
+              </p>
+            </div>
+          
+          </div>
+          
+          </div>
+          <!--v10-->
+
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=5m9sYqJNoWk">
+                <img class="thumbnail1" src="thumbnail/thumbnail-10.webp" alt="">
+                <div class="video-time">5:36</div>
+              </a>
+            </div>
+            
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/watch?v=5m9sYqJNoWk">
+                  <img class="profile-picture" src="profile/channels10_profile.jpg" alt="">
+                </a>
+              </div>
+              
+              <div class="video-info">
+                <p class="video-title">
+                  <a href="https://www.youtube.com/watch?v=5m9sYqJNoWk">
+                    Premalo - Lyrical | Court | Priyadarshi, Harsh Roshan, Sridevi | Vijai Bulganin | Ram Jagadeesh
+                  </a>   
+                </p>
+                <p class="video-author">
+                  <a href="https://www.youtube.com/watch?v=5m9sYqJNoWk">Saregama Telugu
+                  </a>
+                </p>
+                <p class="video-stats">
+                  8.1M views &#183; 1 month ago
+                </p>
+              </div>
+            
+            </div>
+            
+            </div>
+
+            <!--V11-->
+
+            <div class="video-preview">
+              <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=OKIwKTjS7yE">
+                  <img class="thumbnail1" src="thumbnail/thumbnail-11.webp" alt="">
+                  <div class="video-time">19:54</div>
+                </a>
+              </div>
+              
+              <div class="video-info-grid">
+                <div class="channel-picture">
+                  <a href="https://www.youtube.com/watch?v=OKIwKTjS7yE">
+                    <img class="profile-picture" src="profile/channels11_profile.jpg" alt="">
+                  </a>
+                </div>
+                
+                <div class="video-info">
+                  <p class="video-title">
+                    <a href="https://www.youtube.com/watch?v=OKIwKTjS7yE">
+                      Oggy and the Cockroaches - Oggy’s School Struggles! | BEST CARTOON COLLECTION | New Episodes in HD
+                    </a>   
+                  </p>
+                  <p class="video-author">
+                    <a href="https://www.youtube.com/watch?v=OKIwKTjS7yE">OGGY
+                    </a>
+                  </p>
+                  <p class="video-stats">
+                    198k views &#183; 10 month ago
+                  </p>
+                </div>
+              
+              </div>
+              
+              </div>
+
+              <!--v12-->
+
+              <div class="video-preview">
+                <div class="thumbnail-row">
+                  <a href="https://www.youtube.com/watch?v=7wQ-sMojqrs">
+                    <img class="thumbnail1" src="thumbnail/thumbnail-12.webp" alt="">
+                    <div class="video-time">9:30</div>
+                  </a>
+                </div>
+                
+                <div class="video-info-grid">
+                  <div class="channel-picture">
+                    <a href="https://www.youtube.com/watch?v=7wQ-sMojqrs">
+                      <img class="profile-picture" src="profile/channels12_profile.jpg" alt="">
+                    </a>
+                  </div>
+                  
+                  <div class="video-info">
+                    <p class="video-title">
+                      <a href="https://www.youtube.com/watch?v=7wQ-sMojqrs">
+                        Tech News 1908 || Samsung Galaxy S25 Edge, Realme Neo7 & 7T, Apple TV on Android, JioHotstar Etc
+                      </a>   
+                    </p>
+                    <p class="video-author">
+                      <a href="https://www.youtube.com/watch?v=7wQ-sMojqrs">Prasadtechintelugu
+                      </a>
+                    </p>
+                    <p class="video-stats">
+                      145k views &#183; 1 month ago
+                    </p>
+                  </div>
+                
+                </div>
+                
+                </div>
+          <!--v13-->
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <a href="https://www.youtube.com/watch?v=6GuQ9Spo3eY">
+                <img class="thumbnail1" src="thumbnail/thumbnail-13.webp" alt="">
+                <div class="video-time">5:50</div>
+              </a>
+            </div>
+            
+            <div class="video-info-grid">
+              <div class="channel-picture">
+                <a href="https://www.youtube.com/watch?v=6GuQ9Spo3eY">
+                  <img class="profile-picture" src="profile/channel-13.jpeg" alt="">
+                </a>
+              </div>
+              
+              <div class="video-info">
+                <p class="video-title">
+                  <a href="https://www.youtube.com/watch?v=6GuQ9Spo3eY">
+                    Kirrak Party Video Songs | Last Bench Full Video Song 4K | Nikhil Siddharth | Simran, Samyuktha
+                  </a>   
+                </p>
+                <p class="video-author">
+                  <a href="https://www.youtube.com/watch?v=6GuQ9Spo3eY">AK Enterainments
+                  </a>
+                </p>
+                <p class="video-stats">
+                  8.2M views &#183; 6 years ago
+                </p>
+              </div>
+            
+            </div>
+            
+            </div>
+              <!--V14-->
+
+              <div class="video-preview">
+                <div class="thumbnail-row">
+                  <a href="https://www.youtube.com/watch?v=QPxvSJimDjw">
+                    <img class="thumbnail1" src="thumbnail/thumbnail-14.webp" alt="">
+                    <div class="video-time">4:56</div>
+                  </a>
+                </div>
+                
+                <div class="video-info-grid">
+                  <div class="channel-picture">
+                    <a href="https://www.youtube.com/watch?v=QPxvSJimDjw">
+                      <img class="profile-picture" src="profile/channels14_profile.jpg" alt="">
+                    </a>
+                  </div>
+                  
+                  <div class="video-info">
+                    <p class="video-title">
+                      <a href="https://www.youtube.com/watch?v=QPxvSJimDjw">
+                        Sikindar - Nene Kani Nenai Undaga Telugu Song Video | Suriya, Samantha | Yuvan
+                      </a>   
+                    </p>
+                    <p class="video-author">
+                      <a href="https://www.youtube.com/watch?v=QPxvSJimDjw">SonyMusicSouthVEVO
+                      </a>
+                    </p>
+                    <p class="video-stats">
+                      18M views &#183; 8 years ago
+                    </p>
+                  </div>
+                
+                </div>
+                
+                </div>
+
+                <!--v15-->
+                <div class="video-preview">
+                  <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=EqGjca8j2_E">
+                      <img class="thumbnail1" src="thumbnail/thumbnail-15.webp" alt="">
+                      <div class="video-time">19:52</div>
+                    </a>
+                  </div>
+                  
+                  <div class="video-info-grid">
+                    <div class="channel-picture">
+                      <a href="https://www.youtube.com/watch?v=EqGjca8j2_E">
+                        <img class="profile-picture" src="profile/channels11_profile.jpg" alt="">
+                      </a>
+                    </div>
+                    
+                    <div class="video-info">
+                      <p class="video-title">
+                        <a href="https://www.youtube.com/watch?v=EqGjca8j2_E">
+                          Oggy and the Cockroaches - The little thieves! (Season 6) BEST CARTOON COLLECTION | New Episodes HD
+                        </a>   
+                      </p>
+                      <p class="video-author">
+                        <a href="https://www.youtube.com/watch?v=EqGjca8j2_E">OGGY
+                        </a>
+                      </p>
+                      <p class="video-stats">
+                        198k views &#183; 6 years ago
+                      </p>
+                    </div>
+                  
+                  </div>
+                  
+                  </div>
+                <!--V16-->
+
+                <div class="video-preview">
+                  <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                      <img class="thumbnail1" src="thumbnail/thumbnail-4.webp" alt="">
+                    <div class="video-time">22:09</div>
+                    </a>
+                  </div>
+                  
+                  <div class="video-info-grid">
+                    <div class="channel-picture">
+                      <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                        <img class="profile-picture" src="profile/channel-4.jpeg" alt="">
+                      </a>
+                    </div>
+                    
+                    <div class="video-info">
+                      <p class="video-title">
+                        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                          The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </a>
+                      </p>
+                      <p class="video-author">
+                        <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                          Veritasium
+                        </a>
+                      </p>
+                      <p class="video-stats">
+                        18M views &#183; 4 months ago
+                      </p>
+                    </div>
+                  
+                  </div>
+                  
+                  </div>
+    </section>
+  </main>
+  
+</body>
+</html>

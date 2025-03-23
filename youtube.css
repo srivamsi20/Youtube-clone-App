@@ -1,0 +1,123 @@
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  
+}
+@media (max-width: 750px) {
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   
+  }
+}
+@media(min-width:751px) and (max-width:999px)
+{
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+  }
+}
+@media (min-width:1000px)
+{
+  .video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+   
+  }
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 2fr;
+  column-gap: 7px;
+ }
+.video-preview{
+  /*display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  margin-right: 15px;*/
+}
+.channel-picture{
+  /*display: inline-block;
+  width: 50px;*/
+  vertical-align: top;
+  cursor: pointer;
+}
+.video-info{
+  display: inline-block;
+  
+}
+.profile-picture{
+  width: 36px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+  
+}
+.thumbnail1{
+  /*width: 300px;*/
+  width: 100%;
+  border-radius: 7px;
+  transition: border-radius 0.20s;
+  /*display: block;*/
+}
+.thumbnail1:hover{
+  border-radius: 0px;
+}
+
+.video-title{
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; 
+}
+.video-title a{
+  text-decoration: none;
+  color: black;
+}
+
+.video-author,.video-stats{
+  color: rgb(96, 96, 96);
+  font-size: 12px; 
+  
+}
+.video-author a{
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+}
+
+.video-stats{
+ /* background-color: blue; */
+}
+.video-author{
+  cursor: pointer;
+  margin-bottom: 6px; /* background-color: pink;*/
+}
+.video-time{
+  font-size: 12px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}

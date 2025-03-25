@@ -8,27 +8,38 @@
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="sidebar.css">
 
-  <script>
-    document.querySelector('.mobile-search-icon').addEventListener('click', function() {
-      document.querySelector('.header').classList.add('search-active');
-    });
-  
-    // Close search when clicking outside (optional)
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.middle-section') && document.querySelector('.header').classList.contains('search-active')) {
-        document.querySelector('.header').classList.remove('search-active');
-      }
-    });
-  </script>
-
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+      
 
   <title>youtube-project</title>
   <style>
 
   </style>
+
+<script>
+  // Wait for DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileSearchIcon = document.querySelector('.mobile-search-icon');
+    const header = document.querySelector('.header');
+    
+    if (mobileSearchIcon && header) {
+      mobileSearchIcon.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent the click from bubbling up
+        header.classList.add('search-active');
+      });
+    
+      // Close search when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.middle-section') && header.classList.contains('search-active')) {
+          header.classList.remove('search-active');
+        }
+      });
+    }
+  });
+</script>
 </head>
 <body>
   <div class="header">

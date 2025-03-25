@@ -202,90 +202,120 @@ border-image: stretch;
       }
   
 
-      @media (max-width: 600px) {
-        .header {
-          height: 50px;
-          padding: 0 10px;
-        }
-      
-        .left-section {
-          flex: 1;
-          justify-content: flex-start;
-        }
-      
-        .hamburger-menu {
-          height: 22px;
-          margin-left: 10px;
-          margin-right: 15px;
-        }
-      
-        .youtube-logo {
-          height: 18px;
-        }
-      
-        .middle-section {
-          margin-left: 0;
-          margin-right: 0;
-          flex: 2;
-          min-width: 0;
-        }
-      
-        .search-bar {
-          height: 36px;
-          font-size: 14px;
-          padding-left: 12px;
-          flex-shrink: 1;
-        }
-      
-        .search-bar::placeholder {
-          font-size: 14px;
-        }
-      
-        .search-button {
-          height: 36px;
-          width: 50px;
-        }
-      
-        .search-icon {
-          height: 20px;
-        }
-        .voice-search-button {
-          height: 36px;
-          width: 36px;
-          margin-left: 5px;
-        }
-      
-        .voice-search-icon {
-          height: 20px;
-        }
-        .right-section {
-          flex: 1;
-          width: auto;
-          margin-right: 5px;
-          justify-content: flex-end;
-        }
-      
-        .upload-icon,
-        .youtube-apps-icon {
-          display: none;
-        }
-        .notifications-icon {
-          height: 22px;
-          margin-right: 12px;
-        }
-      
-        .current-user-picture {
-          height: 28px;
-          width: 28px;
-        }
-      
-        .notifications-count {
-          font-size: 9px;
-          padding: 1px 4px;
-          top: -3px;
-          right: -8px;
-        }
-        .tooltip {
-          display: none !important;
-        }
-      }
+  /* Trying with search bar */
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 600px) {
+    .header {
+      height: 50px;
+      padding: 0 5px;
+    }
+  
+    .left-section {
+      flex: 0;
+      min-width: auto;
+    }
+  
+    .hamburger-menu {
+      height: 20px;
+      margin-left: 10px;
+      margin-right: 15px;
+    }
+  
+    .youtube-logo {
+      height: 16px;
+      margin-right: 10px;
+    }
+  
+    /* Default mobile view (search collapsed) */
+    .middle-section {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 0;
+      margin-right: 0;
+      flex: 1;
+    }
+  
+    .search-bar,
+    .search-button,
+    .voice-search-button {
+      display: none;
+    }
+  
+    .mobile-search-icon {
+      display: block !important;
+      height: 22px;
+      margin-right: 15px;
+      cursor: pointer;
+    }
+  
+    .right-section {
+      flex: 0;
+      width: auto;
+      margin-right: 5px;
+    }
+  
+    .upload-icon,
+    .youtube-apps-icon {
+      display: none;
+    }
+  
+    .notifications-icon {
+      height: 20px;
+      margin-right: 12px;
+    }
+  
+    .current-user-picture {
+      height: 26px;
+      width: 26px;
+    }
+  
+    .notifications-count {
+      font-size: 8px;
+      padding: 1px 3px;
+      top: -3px;
+      right: -7px;
+    }
+  
+    /* Expanded search view (when search icon is clicked) */
+    .header.search-active {
+      flex-wrap: wrap;
+      height: auto;
+      padding-bottom: 10px;
+    }
+  
+    .header.search-active .left-section,
+    .header.search-active .right-section {
+      display: none;
+    }
+  
+    .header.search-active .middle-section {
+      display: flex;
+      width: 100%;
+      padding: 0 10px;
+      margin-top: 10px;
+    }
+  
+    .header.search-active .search-bar,
+    .header.search-active .search-button {
+      display: flex;
+    }
+  
+    .header.search-active .search-bar {
+      height: 36px;
+      font-size: 14px;
+    }
+  
+    .header.search-active .search-button {
+      height: 36px;
+      width: 50px;
+    }
+  
+    .header.search-active .voice-search-button {
+      display: none;
+    }
+  
+    .header.search-active .mobile-search-icon {
+      display: none !important;
+    }
+  }

@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="sidebar.css">
 
+  <script>
+    document.querySelector('.mobile-search-icon').addEventListener('click', function() {
+      document.querySelector('.header').classList.add('search-active');
+    });
+  
+    // Close search when clicking outside (optional)
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.middle-section') && document.querySelector('.header').classList.contains('search-active')) {
+        document.querySelector('.header').classList.remove('search-active');
+      }
+    });
+  </script>
+
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -36,6 +49,8 @@
           <img class="voice-search-icon" src="youtube-logs/voice-search-icon.svg" alt="">
           <div class="tooltip">Search with your voice</div>
       </button>
+        <!-- the new element by deepseek-->
+        <img class="mobile-search-icon" src="youtube-logs/search.svg" alt="" style="display: none;">
     </div>
     <div class="right-section">
           <div class="upload-icon-container">

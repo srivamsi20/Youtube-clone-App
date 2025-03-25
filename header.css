@@ -249,3 +249,43 @@ border-image: stretch;
         .search-icon {
           height: 20px;
         }
+        .voice-search-button {
+          height: 36px;
+          width: 36px;
+          margin-left: 5px;
+        }
+      
+        .voice-search-icon {
+          height: 20px;
+        }
+        .right-section {
+          flex: 1;
+          width: auto;
+          margin-right: 5px;
+          justify-content: flex-end;
+        }
+      
+        .upload-icon,
+        .youtube-apps-icon {
+          display: none;
+        }
+        .notifications-icon {
+          height: 22px;
+          margin-right: 12px;
+        }
+      
+        .current-user-picture {
+          height: 28px;
+          width: 28px;
+        }
+      
+        .notifications-count {
+          font-size: 9px;
+          padding: 1px 4px;
+          top: -3px;
+          right: -8px;
+        }
+        .tooltip {
+          display: none !important;
+        }
+      }

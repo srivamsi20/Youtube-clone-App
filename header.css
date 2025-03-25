@@ -278,9 +278,9 @@ border-image: stretch;
     } */
     .notifications-count {
       font-size: 9px;
-      padding: 0px 3px;
+      padding: 1px 3px;
       top: -4px;
-      right: -4px;
+      right: -8px;
       min-width: 12px;
     }
   

@@ -270,12 +270,20 @@ border-image: stretch;
       width: 26px;
     }
   
-    .notifications-count {
+   /* .notifications-count {
       font-size: 8px;
       padding: 1px 3px;
       top: -3px;
-      right: -2px;
+      right: 1px;
+    } */
+    .notifications-count {
+      font-size: 9px;
+      padding: 0px 3px;
+      top: -4px;
+      right: -4px;
+      min-width: 12px;
     }
+  
   
     /* Expanded search view (when search icon is clicked) */
     .header.search-active {
